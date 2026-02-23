@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cine<span>Match</span> AI</h1>
+            <p>Tell me your vibe, and I'll find your next watch.</p>
+        </header>
+
+        <div class="input-section">
+            <textarea id="userInput" placeholder="e.g., 'I'm feeling nostalgic and want something cozy but mysterious...'"></textarea>
+            <button onclick="getRecommendations()" id="submitBtn">Get Picks</button>
+        </div>
+
+        <div id="loader" class="hidden">Scanning the archives...</div>
+
+        <div id="results" class="movie-grid">
+            </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
